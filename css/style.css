@@ -1,0 +1,307 @@
+header {
+	height:10em;
+}
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.stars, .twinkling{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:11em;
+  display:block;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+nav {
+	text-align:center;
+	background-color:rgb(0,0,0,.3);
+	}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav li {
+	display:inline;
+	font-size:larger;
+}
+
+nav a{
+	color: #cc99cc;
+	text-decoration: none;
+	padding: .25em;
+	display: inline-block;
+	background-color: #000;
+}
+
+.black{
+	background-color:#000;
+	}
+nav a:hover{
+	background-color:#39F;
+}
+
+aside{
+	font-family: 'Permanent Marker', cursive;
+	margin: 10px;
+	position: relative;
+	width:75%;
+	height:auto;
+	background-color:#00aabb;
+	border-radius: 8px;
+	padding: 1em 1em 1em 1em;
+	color:#eee;
+}
+
+aside:after { 
+content: ''; 
+position: absolute; 
+left: 0; top: 50%; width: 0; height: 0; 
+border: 0.813em solid transparent; 
+border-right-color: #00aabb; 
+border-left: 0; border-bottom: 0; 
+margin-top: -0.406em; margin-left: -0.812em; }
+
+#program {
+	margin: auto;
+	color:#CCC;
+	text-shadow:1px 1px #000000;
+	padding-bottom:1em;
+	font-size:large;
+}
+
+#program div{
+	width:50%;
+	margin:0 auto;
+	}
+
+#program h2{
+	text-align:center;
+	padding-top:1em;
+	}
+
+#program ul{
+	text-align:left;
+	list-style-type: none;
+}
+
+#program li:hover{
+	background-color:#222;
+	color:white;
+}
+
+.date{
+	text-decoration: underline;
+	text-transform: uppercase;
+	padding: 5px 0 0 0;
+}
+
+.Workshops, .Prototyping, .Presentation{
+	text-indent:10px;
+}
+
+.Workshops{
+	color:#9C9;
+}
+
+.Prototyping{
+	color:#F99;
+}
+.Presentation{
+	color:#099;
+	}
+
+#location h2, #resources h2, #sponsors h4, #speakers h4, #sponsors h2, #speakers h2{
+	text-align:center;
+	padding-top:1em;
+	list-style-type:none;
+	}
+
+#about, #resources h4, #location h4, #sponsors h4, #speakers h4{
+	color:#09F;
+	text-shadow:1px 1px #000000;
+	padding-bottom:2em;
+	font-size:large;
+}
+
+.summary-container{
+	list-style:none;
+	margin:auto 0;
+	width:100%;
+	}
+.sum{	
+	background-color:rgba(51,51,51,.3);
+	width:50%;
+	text-decoration:none;
+	size:1em;
+	margin:0 auto;
+	padding: 1em 1em 1em 1em;
+	position:relative;
+	}
+
+h4, a{
+	font-family: 'Raleway', sans-serif;
+	}
+
+h2{
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 2px;
+	}
+	
+#resources, #location, .event, .thedayof, #sponsors{
+	background-size:cover;
+	width:100%;
+	height:auto;
+	background-repeat:no-repeat;
+	background-position:bottom;
+	overflow:visible;
+	color:#D18AB8;
+	text-shadow:1px 1px #000;
+	}
+
+#resources{
+	background-image:url(../img/Background-Resources.jpg);
+	}
+#sponsors{
+	background-image:url(../img/Background-Sponsors.jpg);
+	}
+#location{
+	background-image:url(../img/Background-Location.jpg);
+	}
+.event{
+	background-image:url(../img/Background-Event.jpg);
+}
+
+.thedayof{
+	background-image:url(../img/Header-Palace.jpg);
+	}
+
+.button-container{
+	list-style:none;
+	margin:auto 0;
+	width:100%;
+	padding:1em 0 1em 0;
+	}
+	
+.button{
+	text-align:center;
+	width:25%;
+	background-color:#333;
+	border: none;
+	color: white;
+	text-decoration:none;
+	size:1em;
+	margin:0 auto;
+	padding:.1em 0 .1em 0;
+	position:relative;
+}
+
+.button-content{
+	display:none;
+	position:absolute;
+	z-index:1;
+	min-height:10px;
+	background-color:#999;
+	padding:1em 1em;
+	}
+	
+.button a{
+	color:white;
+	text-decoration:none;
+}
+
+.button:hover .button-content{
+	background-color:#666;
+	border: none;
+	text-align: center;
+	display:block;
+	size:1em;
+	border-radius: 8px;
+	overflow:visible;
+}
+
+
+.card-container{
+	width:100%;
+	height:auto;
+	text-align:center;
+	margin:auto 0;	
+}
+
+.card-container ul{
+		text-align:center;
+	margin:auto 0;
+
+
+}
+.card-container li{
+	list-style-type:none;
+	padding:.5em .5em .5em .5em;
+display:inline-block;
+	text-align:left;
+}
+.card{
+	transition: 0.2s;
+	overflow:hidden;
+	width:7em;
+	word-wrap:break-word;
+}
+
+.card-image{
+	box-shadow:1 1 #000;
+	transition:.3s;
+	margin:auto 0;
+	text-align:center;
+	height:7em;
+	position:relative;
+}
+
+.card-image:hover{
+	transform:scale(1.25,1.25);
+	transform-origin: 50% 50%;
+	box-shadow:2 2 #0f0;
+}
+
+.card-theme{
+	padding: .1em .1em .1em .1em;
+	background-color:#999;
+	word-wrap: break-word;
+	min-height:2em;
+	position:relative;
+}
+.card:hover{
+box-shadow: 0 5px 5px 0 rgba(0,0,33,1);
+}
+
