@@ -4,4 +4,6 @@ A Climathon is a hackathon, or a swarm lab, directed at addressing local and imm
 
 Currently, this repository is being used to host a static web site from organizing purposes.
 
+To connect with the program's team, use our Slack Channel: https://karlsruhe-climathon.slack.com/ .
+
 It is my hope to see the site become a model for other similar events.
