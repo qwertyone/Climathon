@@ -276,8 +276,8 @@ h2{
 	width:5em;
 	height:8em;
 	word-wrap:break-word;
-	border-style:double;
-	border-radius: 20px 0 20px 0;
+	border-style: groove;
+	border-radius: 5px;
 	overflow:hidden;
 }
 .card a {
