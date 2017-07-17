@@ -149,12 +149,6 @@ margin-top: -0.406em; margin-left: -0.812em; }
 	margin:0 auto;
 	}
 
-#program h2{
-	font-size:x-large;
-	text-align:center;
-	padding-top:1em;
-	}
-
 #program ul{
 	text-align:left;
 	list-style-type: none;
@@ -187,24 +181,34 @@ margin-top: -0.406em; margin-left: -0.812em; }
 	color:#099;
 	}
 
-#location h2, #resources h2, #sponsors h4, #Experts h4, #sponsors h2, #Experts h2{
+.program-group-rotation{
+	 /* Rotate column headers */
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+	}
+
+#location h2, #resources h2, #sponsors h2, #Experts h2, #program h2{
+	padding-top:1em;
+	font-size:x-large;
 	text-align:center;
 	padding-top:1em;
-	list-style-type:none;
 	}
 
 #about, #resources h4, #location h4, #sponsors h4, #Experts h4{
 	color:#09F;
 	text-shadow:1px 1px #000000;
-	padding-bottom:2em;
 	font-size:large;
 }
 
 .summary-container{
 	list-style:none;
 	margin:auto 0;
+	padding-bottom:1em;
+	padding-top:1em;
 	width:100%;
 	}
+	
 .sum{	
 	background-color:rgba(51,51,51,.3);
 	width:50%;
@@ -302,7 +306,9 @@ h2{
 	width:100%;
 	height:auto;
 	text-align:center;
-	margin:auto 0;	
+	margin:auto 0;
+	padding-bottom:1.5em;
+	padding-top:1.5em;
 }
 
 .card{
