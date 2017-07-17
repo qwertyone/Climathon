@@ -445,7 +445,8 @@ footer{
 	text-align:right;
 	bottom: 0;
 	right:15%;
-	z-index:100,
+	z-index:100;
+	font-size:smaller;
 	}
 
 .tooltip {
