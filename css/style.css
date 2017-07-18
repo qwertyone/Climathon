@@ -1,6 +1,6 @@
 header {
 	height:10em;
-	z-index::1;
+	z-index:1;
 	margin-top:1em;
 }
 @keyframes move-twink-back {
@@ -307,7 +307,9 @@ h2{
 
 .card-container{
 	width: 50%;
-	margin: 1em auto;
+	margin: 0 auto;
+	margin-top:1em;
+	margin-bottom:1em;
 }
 
 .card-columns {
@@ -345,8 +347,9 @@ h2{
 	background-color:rgba(102,102,102,.6);
 }
 .card-name{
-	padding-top:.2em;
 	color:#09C;
+	background-color:rgba(255,102,102,.6);
+	height:2em;
 	font-size:medium;
 	font-variant:small-caps;
 	position:relative;
@@ -362,12 +365,16 @@ h2{
 .theme-container{
 }
 
+h3{
+	font-size:medium;
+	}
+
 .theme{
   font-size:small;
   margin:auto 0;
   text-align:center;
   position:relative;
-  padding:.3em;
+  height:2em;
 }
 
 
