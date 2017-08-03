@@ -37,6 +37,7 @@ header {
     from {background-position: -500px 0;}
     to {background-position: 20000px 0;}
 }
+
 .stars, .twinkling{
   position:absolute;
   top:0;
@@ -506,3 +507,58 @@ footer{
 	border-style:solid;
 	border-top:3px;
 	}
+
+
+/*design challenge header styling */	
+.design-challenge-container {
+    text-align: center;
+}
+
+.design-challenge{
+	font-size:xx-large;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display:inline-block;
+    margin: .25em;
+    padding: .5em .75em;
+    text-align: center;
+    /* Color fallback */
+    color: #666;
+    -webkit-background-clip: text;
+	/* outline of text for readability */
+    -webkit-text-fill-color: transparent;
+	   -webkit-text-stroke: .01em grey;
+}
+
+.design-challenge:before,
+.design-challenge:after {
+    position: absolute;
+    content: '';
+}
+
+/* for karlsruhe design challenge header */
+.design-challenge:before {
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+
+/* header background zone */
+.design-challenge:after {
+    position: absolute;
+    z-index: -1;
+    top: .125em;
+    right: .125em;
+    bottom: .125em;
+    left: .125em;
+    background-color: #FFF;
+}
+ 
+.design-challenge-header {
+    background-image:url(http://galerie-kellermann.de/wp-content/uploads/2016/01/La-Cle-des-Songes-Oil-on-canvas-700x460.jpg);
+}
+	
