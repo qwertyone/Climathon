@@ -5,7 +5,7 @@ library(rtweet)
 
 
 #twitter setup
-appname <- "KarlsruheLocalData"
+appname <- ""
 #Consumer Key (API Key)
 key <- "" 
 #Consumer Secret (API Secret)
