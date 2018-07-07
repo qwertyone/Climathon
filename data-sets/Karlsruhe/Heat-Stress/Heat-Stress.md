@@ -1,3 +1,5 @@
+This code is for a working heat index bot to deliver canned tips to help raise awareness of the general public (Twitter crowd at this moment) on how they will need to handle increasing tempratures in work and at home.
+
 MIT License
 
 Copyright (c) [2018] [Aaron Gilbee]
