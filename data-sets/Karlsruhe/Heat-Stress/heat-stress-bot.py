@@ -77,9 +77,10 @@ JSON = json.loads(r.text)
 city = JSON['name']
 tempCurrentRaw = JSON['main']['temp']
 humCurrent = JSON['main']['humidity']
-currentCondition = 'Safe'
 result = (tempCurrentRaw * 1.8) - 459.67
-tip = random.choice(S)
+currentCondition = ''
+tip = ''
+
 
 #transform data to heat index data
 #from Kelvin to C -- drybulb temprature assumed
@@ -141,8 +142,10 @@ def tipsHeat(currentState):
         tip == random.choice(R)
         return tip
 
-currentIndexHeat = IndexHeat (tempCurrentRaw, humCurrent)
+currentIndexHeat = IndexHeat(tempCurrentRaw, humCurrent)
 currentState = IndexHeatState(currentCondition, result)
+tip = tipsHeat(currentState)
+post = 'The current heat index color is ' + currentState + ': ' + tip
  
 ##post to twitter
 auth = OAuthHandler(consumer_key, consumer_secret)
@@ -153,7 +156,7 @@ if (not api):
     print ('Problem connecting to API')
 
 try:
-    if api.update_status(status='The current Heat Index color is' + currentState +': ' +tip):
+    if api.update_status(status=post):
         print("Successful posting")
 
 except tweepy.error.TweepError as e:
