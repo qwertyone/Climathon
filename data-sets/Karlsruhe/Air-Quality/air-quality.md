@@ -1,4 +1,4 @@
-This code is for a working air quality index bot to deliver canned tips to help raise awareness of the general public (Twitter crowd at this moment) on how they will need to handle increasing air pollution levels in work and at home. A working version of this bot has been posted at https://twitter.com/HSBotKarlsruhe.
+This code is for a working air quality index bot to deliver canned tips to help raise awareness of the general public (Twitter crowd at this moment) on how they will need to handle increasing air pollution levels in work and at home. A working version of this bot has been posted at https://twitter.com/KlimaBot.
 
 MIT License
 
