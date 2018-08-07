@@ -72,8 +72,8 @@ l4 = 'Maybe activities need moved to morning or evening times. It is cooler.'
 l5 = 'It is hot enough to remove inessential equipment.'
 l6 = 'Soon, convection or air flow strategies to deal with heat will be ineffective alone. Combine with shade.'
 l7 = 'Plants have optimum conditions for growth. 5 C above this point, plants experience their own form of fatigue.' #https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3728475/
-l7 = 'If you have a bottle, please fill it is free: http://bit.ly/DrinkWaterKA'
-l8 = 'Important: free Water Fountain App by @stadtwerke_KA - http://bit.ly/DrinkWaterKA'
+l8 = 'If you have a bottle, please fill it is free: http://bit.ly/DrinkWaterKA'
+l9 = 'Important: free Water Fountain App by @stadtwerke_KA - http://bit.ly/DrinkWaterKA'
 
 #Dark Orange results
 d1 = 'It is time to move indoors and into a cool area.'
@@ -92,7 +92,7 @@ def R():
 	return tipHI
 
 def L():
-	L=[l1, l2, l3, l4, l5, l6, l7, l8]
+	L=[l1, l2, l3, l4, l5, l6, l7, l8, l9]
 	tipHI = random.choice(L)
 	return tipHI
 
