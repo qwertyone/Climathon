@@ -1,0 +1,23 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="../static/styles.css">
+</head>
+<body>
+<div>
+<div class="FrameHI FrameHI--{{ indexHeatState }}">
+<div class="HI--{{ indexHeatState }}"> 
+{% block HI %}
+{% endblock %}
+</div>
+</div>
+
+<div class="FrameAQI FrameAQI--{{ currentStateAQI }}">
+<div class="AQI--{{ currentStateAQI }}"> 
+{% block AQI %}
+{% endblock %}
+</div>
+</div>
+</div>
+</body>
+</html>
